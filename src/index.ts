@@ -8,11 +8,11 @@ const matches = fs.readFileSync('football.csv', {
   .map((row: string): string[] => {
     return row.split(',')
   })
-
-const MatchResult = {
-  HomeWin: 'H',
-  AwayWin: 'A',
-  Draw: 'D'
+//  enum (enumberation) is an object that stores some very closely related values
+enum MatchResult {
+  HomeWin = 'H',
+  AwayWin = 'A',
+  Draw = 'D'
 }
 
 let manUnitedWins = 0;
