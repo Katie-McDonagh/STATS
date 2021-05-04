@@ -4,13 +4,7 @@ const reader = new CsvFileReader('football.csv')
 reader.read()
 
 console.log(reader.data)
-//  enum (enumeration) is an object that stores some very closely related values
-enum MatchResult {
-  // when declairing an enum it also creates a type called MatchResult
-  HomeWin = 'H',
-  AwayWin = 'A',
-  Draw = 'D'
-}
+
 
 let manUnitedWins = 0;
 
